@@ -18,9 +18,11 @@ print(pepe.edad)
 
 class blogger:
     lineas = 5
-    def __init__(self, apuntes):
+    def __init__(self, apuntes, hule):
         self.mynote = apuntes
-        print("Hola escribi", self.mynote)
-cuaderno = blogger("Alex")
+        self.basurero = hule
+        print("Hola escribi", self.mynote, self.basurero)
+cuaderno = blogger("Alex", "Hola")
 print(cuaderno.lineas)
 print(cuaderno.mynote)
+print(cuaderno.basurero)
