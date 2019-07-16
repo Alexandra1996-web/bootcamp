@@ -16,13 +16,14 @@ print(pepe.mi_nombre)
 pepe.cumple()
 print(pepe.edad)
 
-class blogger:
+class Blogger:
     lineas = 5
     def __init__(self, apuntes, hule):
         self.mynote = apuntes
         self.basurero = hule
         print("Hola escribi", self.mynote, self.basurero)
-cuaderno = blogger("Alex", "Hola")
+
+cuaderno = Blogger("Alex", "Hola") #mayusculalasclases
 print(cuaderno.lineas)
 print(cuaderno.mynote)
 print(cuaderno.basurero)
