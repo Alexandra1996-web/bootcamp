@@ -231,7 +231,7 @@ contador = 0
 while True:
 	condicion = gpio.input(entrada)
 
-
+print ("chauhola")
 
 
 
