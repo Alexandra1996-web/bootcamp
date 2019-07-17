@@ -25,3 +25,16 @@ pepitocreaobjeto = Dino ("Alex", "verde")
 pepitocreaobjeto.saludar("holiiiis")#noolvidarsiesmetodoseponeparentesis y add argumento new
 pepitocreaobjeto.decir_genero()
 print(pepitocreaobjeto.oper())
+
+
+#herencia toma una clase anterior para crearse
+class Trex(Dino): #en la clase Trex hereda los emtodos y atributos definidos
+    #en la clase Dino
+    def __init__(self, nombre, patas=4, color=None):
+        self.nombre = nombre
+        self.patas = patas
+        self.color = color 
+        print("Hola soy un Trex y me llamo", self.nombre)
+robert =  Trex("Roberto el Trex")
+print(robert.ojos)
+robert.saludar("hola grupo")
